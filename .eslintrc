@@ -1,0 +1,27 @@
+{
+    "env": {
+      "browser": true,     // Si le projet contient aussi du code pour le client web
+      "es2021": true,      // Support des fonctionnalités ES2021
+      "node": true         // Indique que l'environnement est Node.js
+    },
+    "extends": [
+      "eslint:recommended" // Utilise les règles recommandées par ESLint
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,   // Utilisation des fonctionnalités ECMAScript 2021
+      "sourceType": "module" // Permet l'utilisation des modules ES
+    },
+    "rules": {
+      "indent": ["error", 2], // Utilise une indentation de 2 espaces
+      "quotes": ["error", "single"], // Utilise des simples quotes pour les chaînes
+      "semi": ["error", "always"],   // Toujours utiliser des points-virgules
+      "no-unused-vars": ["warn"],    // Avertit lorsqu'il y a des variables non utilisées
+      "eqeqeq": ["error", "always"], // Obligatoire d'utiliser === au lieu de ==
+      "no-console": "off",           // Autorise l'utilisation de console.log
+      "comma-dangle": ["error", "never"], // Pas de virgule finale
+      "no-var": "error",             // Empêche l'utilisation de 'var', préférer 'let' ou 'const'
+      "prefer-const": "error",       // Préférer 'const' si la variable n'est pas réaffectée
+      "arrow-spacing": ["error", { "before": true, "after": true }] // Espaces avant et après les flèches des fonctions
+    }
+  }
+  
